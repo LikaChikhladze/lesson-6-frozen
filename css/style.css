@@ -1,0 +1,181 @@
+.castle {
+	width: 100%;
+	position: relative;
+}
+.snowflakes {
+	width: 900px;
+	height: 400px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	transform: rotate(25deg);
+	animation: movesnowflakes 40s infinite;
+	animation-direction: alternate;
+}
+.snowflakes2 {
+	width: 900px;
+	height: 400px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	transform: rotate(25deg);
+	animation: movesnowflakes2 50s infinite;
+	animation-direction: alternate;
+}
+
+.flake {
+	width: 80px;
+	position: absolute;
+	top: 115px;
+	right: 170px;
+	border-radius: 50px;
+	filter: blur(5px);
+	transition: all 2s linear;
+}
+.deer {
+	width: 120px;
+	position: absolute;
+	top: 600px;
+	left: 0px;
+	transform: rotate(-20deg);
+	filter: contrast(200%);
+	animation: movedeer 30s infinite;
+
+}
+.deer2 {
+	width: 120px;
+	position: absolute;
+	top: 600px;
+	left: 0px;
+	transform: rotate(-20deg);
+	filter: contrast(200%);
+	animation: movedeer2 32s infinite 0.5s;
+}
+.deer3 {
+	width: 120px;
+	position: absolute;
+	top: 600px;
+	left: 0px;
+	transform: rotate(-20deg);
+	filter: contrast(200%);
+	animation: movedeer3 34s infinite 1s;
+}
+.cloud {
+	width: 110px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	animation: movecloud 70s infinite;
+	animation-direction: alternate;
+	opacity: 0.5;
+
+}
+.cloud2 {
+	width: 110px;
+	position: absolute;
+	top: 0px;
+	left: 120px;
+	animation: movecloud2 70s infinite ;
+	animation-direction: alternate;
+	opacity: 0.5;
+}
+.cloud3 {
+	width: 110px;
+	position: absolute;
+	top: 0px;
+	left: 240px;
+	animation: movecloud3 70s infinite ;
+	animation-direction: alternate;
+	opacity: 0.5;
+}
+.cloud4 {
+	width: 110px;
+	position: absolute;
+	top: 0px;
+	left: 360px;
+	animation: movecloud4 70s infinite ;
+	animation-direction: alternate;
+	opacity: 0.5;
+}
+.olaf {
+	width: 87px;
+	position: absolute;
+	top: 200px;
+	left: 100px;
+	animation: moveolaf 13s infinite;
+	animation-direction: alternate;
+	transition-timing-function: linear;
+}
+.elsa {
+	width: 5%;
+	position: absolute;
+	top: 250px;
+	left: 1195px;
+	border-radius:200px;
+	opacity: 0.8;
+	transition: all 2s linear;
+}
+
+
+
+
+
+
+.flake:hover {
+	width: 105px;
+	top: 105px;
+	right: 160px;
+	border-radius: 50px;
+	filter: url("../../media/examples/shadow.svg#element-id");
+}
+.elsa:hover {
+	width: 1300px;
+	left: 60px;
+	top: 50px;
+	opacity: 1;
+}
+
+
+@keyframes movesnowflakes {
+	from {left: -250px;}
+	to {left: 750px; transform: rotate(90deg);}
+}
+@keyframes movesnowflakes2 {
+	from {left: 750px;}
+	to {left: -250px; transform: rotate(-90deg);}
+}
+@keyframes movedeer {
+	from {top: 600px; left: 0px;}
+	to {top: 0px; left: 1430px;}
+}
+@keyframes movedeer2 {
+	from {top: 600px; left: 0px;}
+	to {top: 0px; left: 1430px;}
+}
+@keyframes movedeer3 {
+	from {top: 600px; left: 0px;}
+	to {top: 0px; left: 1430px;}
+}
+@keyframes movecloud {
+	0% {transform: translateX(0px);}
+	100% {transform: translateX(1500px);}
+}
+@keyframes movecloud2 {
+	0% {transform: translateX(120px);}
+	100% {transform: translateX(1500px);}
+}
+@keyframes movecloud3 {
+	0% {transform: translateX(240px);}
+	100% {transform: translateX(1500px);}
+}
+@keyframes movecloud4 {
+	0% {transform: translateX(360px);}
+	100% {transform: translateX(1500px);}
+}
+@keyframes moveolaf {
+	0% {transform: translate(0px,0px);}
+/*	25% {transform: translate(100px,80px);}
+	50% {transform: translate(180px,180px);}
+	75% {transform: translate(220px,260px);}
+*/	100% {transform: translate(320px,350px) rotate(30deg);}
+}
